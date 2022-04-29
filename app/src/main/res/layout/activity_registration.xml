@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.register.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shapes" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/welcome_back_prototype"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/sign_account"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/enter_your_name"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_50sdp"
+                android:textSize="@dimen/_12dp"
+                app:backgroundTint="@color/colorWhite" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/enter_your_email"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_50sdp"
+                android:textSize="@dimen/_12dp"
+                app:backgroundTint="@color/colorWhite" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/enter_password"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_50sdp"
+                android:textSize="@dimen/_12dp"
+                app:backgroundTint="@color/colorWhite" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/confirm_password"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_50sdp"
+                android:textSize="@dimen/_12dp"
+                app:backgroundTint="@color/colorWhite" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginButton"
+                style="@style/buttonLoginStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/register" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
